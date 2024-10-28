@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+  import { useState, useEffect } from "react";
 
 export default function StatusBar() {
   const [isOnline, setIsOnline] = useState(true);
@@ -16,11 +16,8 @@ export default function StatusBar() {
       window.removeEventListener("offline", handleOffline);
     };
   }, []);
-  let i2 = ["✅", "❌"];
-  let i = {
-    online: "🟢",
-    offline: "🔴",
-  };
+ 
+ 
 
   return <div>{isOnline ? "🟢" : "🔴"}</div>;
 }
